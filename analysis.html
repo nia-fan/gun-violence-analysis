@@ -91,7 +91,7 @@
         <div class="img-fluid py-3 text-center">
           <div class="embed-container">
             <br>
-            <img src="assets/images/wordcloud.jpg"
+            <img src="assets/images/wordcloud.png"
             width="500"
             height="500">
           </div>
@@ -102,8 +102,21 @@
         <h2 class="title-section">Word Cloud</h2>
         <div class="divider"></div>
 
-        <p>Text analysis was performed on "notes" field of the gun violence data, which contained additional notes about the incident, if available. The most prominent words to stand out 
-          are "car", "drug", home", "handgun", and "police". Frequently appearing words involved locations ("office", "school", "park"), gun types ("pistol", "rifle"). 
+        <p>66% of incidents had a completed "notes" field, on which we conducted text analysis. Words deemed too "generic" were removed. Some noteworthy observations:
+          <ul>
+            <li>"Man" appears far more frequently than "Woman"</li>
+            <li>"Home" is the most common location term"</li>
+            <li>"Drug is the most common term</li>
+            <li>"Car" and "Drive" both occur quite frequently</li>
+            <li>"Stolen", "Robbery", and "Gang" - common terms associated with criminal activity</li>
+            <li>"Self" appears a notable amount of times</li>
+          </ul>  
+          Words removed from the word cloud: 
+          <ul>
+            <li>"Shot", "Gun", "Fire", "Found", "Suspect", "Victim", "Shoot", "Near", "Inj", "Vic", "During", "Perp", "Unclear", "Report", "Stop", "Co", "Cal", "Up",
+              "One", "Time", "Two", "Recov", "Poss", "Attempt", "Approx", "Street", "Apart", "St", "Hi", "Weapon", "Di", "Another", "Between", "Over"
+            </li>
+          </ul>
         </p>
       </div>
     </div>
@@ -151,10 +164,10 @@
           <h2 class="title-section">Cluster Analysis by State</h2>
           <div class="divider"></div>
 
-          <p>When a clustering analysis was performed on a state level, the "gun violence" cluster consisted of Alabama, Alaska, Deleware, Illinois, Louisiana, Mississippi, Missouri,
-            South Carolina, and Tennessee. Washington DC was a massive outlier as its own "gun violence" cluster, and was removed from this clustering analysis in order to not skew 
-            the results. Of the 9 states in the final "gun violence" cluster, only Deleware and Illinois are historically "blue" (Democrat) by political affiliation, while the remaining 7 are 
-            traditionally "red" (Republican) and mostly southern states. Yellow states labeled "0" were not in the "gun violence" cluster, while red states labeled "1" were part of the "gun violence" cluster.
+          <p>When a clustering analysis was performed on a state level, the gun violence cluster (states in red) consisted of Alabama, Alaska, Deleware, Illinois, Louisiana, Mississippi, Missouri,
+            South Carolina, and Tennessee. Washington DC was a massive outlier in terms of gun violence, and was removed from this clustering analysis in order to not skew 
+            the results. Of the 9 states in the final gun violence cluster, only Deleware and Illinois are historically "blue" (Democrat) by political affiliation, while the remaining 7 are 
+            traditionally "red" (Republican). Illinois is the only state with licensing requirements for gun purchase or possession.
           </p>
         </div>
       </div>
