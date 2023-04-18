@@ -91,6 +91,7 @@
         <div class="img-fluid py-3 text-center">
           <div class="embed-container">
             <br>
+            <br>
             <img src="assets/images/wordcloud.png"
             width="500"
             height="500">
@@ -161,7 +162,7 @@
           </div>
         </div>
         <div class="col-lg-6 py-3 w3-animate-right">
-          <h2 class="title-section">Cluster Analysis by State</h2>
+          <h2 class="title-section">Cluster Analysis by State Using KMeans</h2>
           <div class="divider"></div>
 
           <p>When a clustering analysis was performed on a state level, the gun violence cluster (states in red) consisted of Alabama, Alaska, Deleware, Illinois, Louisiana, Mississippi, Missouri,
@@ -169,31 +170,68 @@
             the results. Of the 9 states in the final gun violence cluster, only Deleware and Illinois are historically "blue" (Democrat) by political affiliation, while the remaining 7 are 
             traditionally "red" (Republican). Illinois is the only state with licensing requirements for gun purchase or possession.
           </p>
+          <p>Red cluster center: 0.00138815</p>
+          <p>Yellow cluster center: 0.00068977</p>
         </div>
       </div>
     </div> <!-- .container -->
    
   </div>
-  <div class="section" id="congressionalcluster">
+  <div class="section" id="congressionalclusterpoverty">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 py-3">
-          <h2 class="title-section">Cluster Analysis by Congressional District</h2>
+          <h2 class="title-section">Cluster Analysis by Congressional District Using KMeans - Poverty Levels</h2>
           <div class="divider"></div>
 
-          <p>When a clustering analysis was performed based on congressional districts, 4 distinct groups appeared, labeled 0, 1, 2, and 3. As the color gets darker and the number gets higher,
-            the group has higher patterns of gun violence. 246 districts were clustered at the lowest level of gun violence of 0, 40 districts clustered at level 1, 9 districts clustered at 
-          level 2, and 140 districts clustered at the highest level, 3. This analysis gives us a more detailed insight than the state-level clustering, as we are able to see beyond the general
-        state patterns. For example, a state like California, which clustered in the "non gun-violence" group before, actually has several districts grouped in the highest level of gun violence.
-      In general, more populated states and districts tended to end up in the higher gun violence clusters, along with more districts in the south.  </p>
+          <p>Clustering analysis of poverty levels in each Congressional District showed 3 distinct groups, labeled 0, 1, and 2, which represent lowest to highest poverty levels.</p>
+          <p>Poverty Rate cluster centers:</p>
+          <p><ul>
+            <li>1. 0.22874217</li>
+            <li>2. 0.1501948</li>
+            <li>3. 0.09184579</li>
+            <li>"Car" and "Drive" both occur quite frequently</li>
+          </ul>  </p>
         </div>
         <div class="col-lg-6 py-3">
           <div class="img-fluid py-3 text-center">
             <div class="embed-container">
-              <iframe src="https://sdsugeo.maps.arcgis.com/apps/instant/basic/index.html?appid=4ddbbff7c68443559e521eca5495709a&locale=en-us" 
-              width="400" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+              <iframe src="https://sdsugeo.maps.arcgis.com/apps/instant/basic/index.html?appid=9361bae682bd42baad1dba56e3a6be26&locale=en-us" width="400" height="600" frameborder="0" 
+              style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
             </div>
           </div>
+        </div>
+      </div>
+    </div> <!-- .container -->
+
+  </div>
+  <div class="section bg-light" id="congressionalclusterviolence">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 py-3">
+          <div class="img-fluid py-3 text-center">
+            <div class="embed-container">
+              <iframe src="https://sdsugeo.maps.arcgis.com/apps/instant/basic/index.html?appid=3be77372a7fb4481b127947ba4f33ba6&locale=en-us" width="400" height="600" frameborder="0" 
+              style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 py-3 w3-animate-right">
+          <h2 class="title-section">Cluster Analysis by Congressional District Using KMeans - Gun Violence</h2>
+          <div class="divider"></div>
+
+          <p>49 of the 435 Congressional Districts were categorized into the cluster pertaining to higher proportions of gun violence.
+          </p>
+          <p>Of the 189 Districts in the cluster with the lowest poverty rates (cluster 3), only 1 of them appeared in the 49 Districts identified as most violent 
+            (Alaska, at large).
+          </p>
+          <p>Fairly even split among the remaining 48 Districts between clusters 1 and 2.</p>
+          <p> Gun violence cluster centers:
+            <ul>
+            <li>1. 0.00051125</li>
+            <li>2. 0.00228605</li>
+            </ul>  </p>
         </div>
       </div>
     </div> <!-- .container -->
